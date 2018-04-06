@@ -1,0 +1,136 @@
+---
+title: "Data Sci 4 Ling"
+subtitle: "Online Presentation"
+author: "Eileen Blum"
+date: "April 6, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["https://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "https://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
+    nature:
+      beforeInit: "https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# A phonetic study of final vowel lengthening in Chickasaw
+
+## Matt Gordon & Pamela Munro
+
+[Gordon, Matthew & Pamela Munro (2007). A Phonetic Study of Final Vowel Lengthening in Chickasaw. International Journal of American Linguistics. 73(3), 293-330.](https://www.journals.uchicago.edu/doi/abs/10.1086/521729)
+
+--
+
+### Research Questions:
+
+Do iambic stress systems also exhibit phrase final vowel lengthening?
+
+Does phrase final lengthening interact with iambic lengthening (also called "rhythmic lengthening")?
+
+--
+
+### Conclusion:
+
+Phonetic duration increased according to the "size of the [prosodic] domain at whose right edge the vowel occurs" (Gordon&Munro 2007).
+
+---
+
+# Chickasaw
+
+- three vowels: /a, i, o/
+- iambic stress
+- phonological length contrast
+  - long vowels twice as long as short vowels
+  - both longer word-finally
+- iambic lengthening: Vowels are lengthened (ˑ) in stressed open syllables.
+  - not in closed syllables <br>
+  (tʃokóʃ)(komo) ‘He plays’, *(tʃokóˑʃ)(komó)
+  - reported not word-finally <br>
+  (asáˑ)(biká) 'I am sick', (pisá) 'He sees it'
+
+--
+
+Acoustic Experiment tested trisyllabic nouns and verbs with open medial and final syllables.
+
+--
+
+.pull-left[Target vowels differ by three criteria:
+- long and short
+- [a], [i], and [o]
+- short vowels preceded by stressed and unstressed syllable
+]
+
+--
+
+.pull-right[Target words occurred in three contexts:
+- phrase-medial
+- phrase-final 
+  - before clause boundary
+- utterance-final
+  - preceded by a frame word
+]
+---
+
+# Hypotheses:
+
+### 1. Iambic lengthening suppressed word-finally, as described
+
+### 2. Vowels lengthened by stress
+
+### 3. Vowels lengthened in final positions
+
+--
+
+# Conclusion:
+
+### Hypothesis 3 ✓
+Phonetic duration increased according to the "size of the [prosodic] domain at whose right edge the vowel occurs" (Gordon&Munro 2007).
+---
+
+# Presentation of Analysis
+
+- bar graphs with standard deviations marked
+- in-text reference to t-values, degrees of freedom, and p-values for each comparison
+- charts displaying averages across speakers
+- explanations of findings with average durations noted for each category compared
+- no mention of the potential effects of speech rate or segmental context on vowel duration
+
+--
+
+## T-tests
+
+The authors made all of their comparisons using pairwise t-tests with a restricted alpha of 0.0001. T-tests were used to determine statistical significance, which was then equated with theoretical significance.
+
+--
+
+Running multiple t-tests on a single data set increases the potential for a Type 1 error, which would cause the researchers to reject a warranted null hypothesis. This means that using multiple t-tests to determine statistical significance has the potential to result in finding significant differences where there are none. While using a low alpha, such as 0.0001, helps to mitigate this potential error by restricting the number of test results one interprets as being significantly different, it does not eliminate the possitibility of Type 1 error.
+
+---
+
+# Alternative Analysis
+
+First, the authors could have included some demonstration of the distribution of their data. Whether or not the duration measures were normally distributed would determine if any statistical transformation were necessary before being able to interpret the results. Further, they could have tested for homoskedasticity and plotted the distribution of their residuals.
+
+--
+
+In order to avoid the potential for Type 1 error, the authors could have used a linear mixed effects model, which would allow them to compare the effects of multiple variables such as speaker, syllable position, prosodic position, phonological length distinciton, and stress on duration measurements.
+
+Nested model comparisons would test the main effects of each variable as well as the interactions between them to determine whether any of them predicts the vowel duration differences.
+
+--
+
+The authors also claimed a lack of correlation between differences in foot structure over the final syllable and final duration, but no test for correlation was mentioned.
+
+---
+
+# My opinion
+
+I liked that the authors included graphs and tables to aide the reader in visually interpreting their findings. They clearly explained their methods and how they came to their conclusion using the limited statistical tools available to them. 
+
+I did not like the statistical methods they used because accurately interpreting results from t-tests alone is difficult due to the potential for Type 1 error.

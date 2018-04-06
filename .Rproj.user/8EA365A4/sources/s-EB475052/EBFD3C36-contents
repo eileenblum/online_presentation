@@ -1,0 +1,199 @@
+---
+title: "Syntax 4"
+subtitle: "Week 12"
+author: "Eileen Blum"
+date: "Rutgers University </br> April 5, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["https://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "https://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
+    nature:
+      beforeInit: "https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+header-includes:
+  - \usepackage{tipa}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Business
+
+- Homework 5 not yet graded, *sorry*
+
+- Homework 6 **due Monday April 9**
+
+- Homework 7 will be posted next week
+
+---
+
+# Review
+
+- So far we have learned that our syntactic competence includes
+
+  - parts of speech
+  - PSRs for combining them to create  
+  - sentences with hierarchical structure
+
+--
+
+### Today,
+
+- We will add to this list information about what types of words can be combined.
+
+- And we will learn how to discover PSRs from foreign language data.
+
+---
+
+# Final English PSRs
+
+CP $\rightarrow$ (C) TP <br>
+TP $\rightarrow$ {NP/CP} (T) VP <br>
+NP $\rightarrow$ (D) (AdjP+) N (PP+) (CP) <br>
+VP $\rightarrow$ (AdvP+) V (NP) ({NP/CP}) (AdvP+) (PP+) (AdvP+) <br>
+PP $\rightarrow$ P NP <br>
+AdjP $\rightarrow$ (AdvP) Adj <br>
+AdvP $\rightarrow$ (AdvP) Adv 
+
+In groups, take 10 minutes to draw the trees for the two sentences you are given. I will then select which groups will draw one tree on the board.
+---
+
+# Subcategorization
+
+-Our PSRs overgenerate
+
+.pull-left[
+- John told Jim that Eliza is leaving. <br>
+- Fenster put the wombat in the bathtub. <br>
+- The linguist on the table
+]
+
+.pull-right[
+- *John kicked Jim that Eliza is leaving
+- *Fenster put the wombat
+- *The linguist on French
+]
+
+--
+
+- The standard story for this is **subcategorization**: lexical entries of words include further restrictions about what their phrases contain (animate NPs, CPs, no CPs, etc.)
+
+---
+
+# Phrase structure in other languages
+
+- Last week, we talked about how languages vary in basic word order
+
+--
+
+- In our more sophisticated understanding of syntax, this translates to variation in phrase structure rules.
+- What rule can we posit for VPs in Japanese? <br>
+
+Satoshi-ga |Takashi-wo  |disu-tta
+-----------|------------|---------
+Satoshi-NOM|Takashi-ACC |diss-PAST
+.center["Satoshi dissed Takashi"]
+
+--
+
+- VP $\rightarrow$ (NP) V
+
+---
+
+# A digression on case
+
+- NOM (*nominative*) and ACC (*accusative*) are explicit expressions of **case** <br>
+
+Satoshi-ga |Takashi-wo  |disu-tta
+-----------|------------|---------
+Satoshi-NOM|Takashi-ACC |diss-PAST
+.center["Satoshi dissed Takashi"]
+
+--
+
+- **Case** is a property of nouns depending on their role in a sentence <br>
+
+He        |saw   |him       |
+----------|------|----------|
+nominative|past  |accusative|
+
+--
+
+- Strictly speaking, all nouns have case, but it is not always pronounced (depending on the morphology of the language) <br>
+
+.center[John-Ø.NOM saw Steve-Ø.ACC]
+
+---
+
+# Phrase structure in other languages
+
+- Consider the following data and questions on Sinhala <br>
+
+Jōn | ballavə| däkka|
+----|--------|------|
+John|dog     |saw
+.center["John saw the dog"]  
+
+Jōn | janēle |iñdəla| ballavə|  däkka|
+----|--------|------|--------|-------|
+John|window  |from  |dog     |saw    |
+.center["John saw the dog from the window"]
+
+- What is the PP rule of Sinhala?
+
+--
+
+PP $\rightarrow$ NP P
+
+--
+
+- What is the VP rule of Sinhala?
+
+--
+
+VP $\rightarrow$ (PP) NP V
+
+---
+
+# Practice
+
+In groups, posit an NP, VP, and TP rule to account for the Hixkaryana data below. 
+
+- *some* and *all* are determiners
+- assume AdjP $\rightarrow$ Adj 
+- What is the part of speech of *Newehyatxhe* in (b)?<br>
+
+Draw the trees for (a)-(c)
+
+(a)|kuraha|yonyhoryeno|biyekomo
+---|------|-----------|--------
+gl:|bow   |made       |boy
+.center["The boy made a bow"]
+
+(b)|Newehyatxhe|woriskomo|komo
+---|-----------|---------|----
+gl:|take-bath  |women    |all
+.center["All the women take a bath"]
+
+(c)|Toto  |heno|komo|yonoye|kamara
+---|------|----|----|------|------
+gl:|person|dead|all |ate   |jaguar
+.center["The jaguar ate all the dead people"]
+
+---
+
+# Recap
+
+Today, 
+
+- We extended our knowledge of linguistic competence to include information about how syntactic categories can determine what they combine with, called *subcategorization*.
+
+- We saw that PSRs can vary from language to language. 
+
+- And we practiced discovering the PSRs and drawing trees for sentences in a language other than SAE
+
+Next week, we will learn what movement is and begin semantics.

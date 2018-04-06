@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Sci 4 Ling</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Eileen Blum" />
+    <link rel="stylesheet" href="https://www.jvcasillas.com/ru_xaringan/css/rutgers.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Data Sci 4 Ling
+## Online Presentation
+### Eileen Blum
+### April 6, 2018
+
+---
+
+
+
+
+# A phonetic study of final vowel lengthening in Chickasaw
+
+## Matt Gordon &amp; Pamela Munro
+
+[Gordon, Matthew &amp; Pamela Munro (2007). A Phonetic Study of Final Vowel Lengthening in Chickasaw. International Journal of American Linguistics. 73(3), 293-330.](https://www.journals.uchicago.edu/doi/abs/10.1086/521729)
+
+--
+
+### Research Questions:
+
+Do iambic stress systems also exhibit phrase final vowel lengthening?
+
+Does phrase final lengthening interact with iambic lengthening (also called "rhythmic lengthening")?
+
+--
+
+### Conclusion:
+
+Phonetic duration increased according to the "size of the [prosodic] domain at whose right edge the vowel occurs" (Gordon&amp;Munro 2007).
+
+---
+
+# Chickasaw
+
+- three vowels: /a, i, o/
+- iambic stress
+- phonological length contrast
+  - long vowels twice as long as short vowels
+  - both longer word-finally
+- iambic lengthening: Vowels are lengthened (ˑ) in stressed open syllables.
+  - not in closed syllables &lt;br&gt;
+  (tʃokóʃ)(komo) ‘He plays’, *(tʃokóˑʃ)(komó)
+  - reported not word-finally &lt;br&gt;
+  (asáˑ)(biká) 'I am sick', (pisá) 'He sees it'
+
+--
+
+Acoustic Experiment tested trisyllabic nouns and verbs with open medial and final syllables.
+
+--
+
+.pull-left[Target vowels differ by three criteria:
+- long and short
+- [a], [i], and [o]
+- short vowels preceded by stressed and unstressed syllable
+]
+
+--
+
+.pull-right[Target words occurred in three contexts:
+- phrase-medial
+- phrase-final 
+  - before clause boundary
+- utterance-final
+  - preceded by a frame word
+]
+---
+
+# Hypotheses:
+
+### 1. Iambic lengthening suppressed word-finally, as described
+
+### 2. Vowels lengthened by stress
+
+### 3. Vowels lengthened in final positions
+
+--
+
+# Conclusion:
+
+### Hypothesis 3 ✓
+Phonetic duration increased according to the "size of the [prosodic] domain at whose right edge the vowel occurs" (Gordon&amp;Munro 2007).
+---
+
+# Presentation of Analysis
+
+- bar graphs with standard deviations marked
+- in-text reference to t-values, degrees of freedom, and p-values for each comparison
+- charts displaying averages across speakers
+- explanations of findings with average durations noted for each category compared
+- no mention of the potential effects of speech rate or segmental context on vowel duration
+
+--
+
+## T-tests
+
+The authors made all of their comparisons using pairwise t-tests with a restricted alpha of 0.0001. T-tests were used to determine statistical significance, which was then equated with theoretical significance.
+
+--
+
+Running multiple t-tests on a single data set increases the potential for a Type 1 error, which would cause the researchers to reject a warranted null hypothesis. This means that using multiple t-tests to determine statistical significance has the potential to result in finding significant differences where there are none. While using a low alpha, such as 0.0001, helps to mitigate this potential error by restricting the number of test results one interprets as being significantly different, it does not eliminate the possitibility of Type 1 error.
+
+---
+
+# Alternative Analysis
+
+First, the authors could have included some demonstration of the distribution of their data. Whether or not the duration measures were normally distributed would determine if any statistical transformation were necessary before being able to interpret the results. Further, they could have tested for homoskedasticity and plotted the distribution of their residuals.
+
+--
+
+In order to avoid the potential for Type 1 error, the authors could have used a linear mixed effects model, which would allow them to compare the effects of multiple variables such as speaker, syllable position, prosodic position, phonological length distinciton, and stress on duration measurements.
+
+Nested model comparisons would test the main effects of each variable as well as the interactions between them to determine whether any of them predicts the vowel duration differences.
+
+--
+
+The authors also claimed a lack of correlation between differences in foot structure over the final syllable and final duration, but no test for correlation was mentioned.
+
+---
+
+# My opinion
+
+I liked that the authors included graphs and tables to aide the reader in visually interpreting their findings. They clearly explained their methods and how they came to their conclusion using the limited statistical tools available to them. 
+
+I did not like the statistical methods they used because accurately interpreting results from t-tests alone is difficult due to the potential for Type 1 error.
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
